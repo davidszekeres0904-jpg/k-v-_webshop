@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kávé Világ - Webshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Kávé Világ</div>
+        <div class="nav-links">
+            <a href="#">Főoldal</a>
+            <a href="#">Termékek</a>
+            <a href="#">Kapcsolat</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="products-section">
+            <h2>Termékeink</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?coffee-beans" alt="Etióp Kávé (szemes)">
+                    <div class="product-info">
+                        <h3>Etióp Yirgacheffe (szemes)</h3>
+                        <p>Élénk citrusos jegyekkel és virágos aromával. Közepesen pörkölt.</p>
+                        <div class="product-price">4.200 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Etióp Yirgacheffe (szemes)" data-price="4200">Kosárba</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?coffee-cup" alt="Kolumbiai Kávé (szemes)">
+                    <div class="product-info">
+                        <h3>Kolumbia Supremo (szemes)</h3>
+                        <p>Közepes testű, enyhén édes íz, karamellás és diós jegyekkel.</p>
+                        <div class="product-price">3.900 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Kolumbia Supremo (szemes)" data-price="3900">Kosárba</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?espresso" alt="Brazil Kávé (szemes)">
+                    <div class="product-info">
+                        <h3>Brazília Santos (szemes)</h3>
+                        <p>Gazdag, testes ízvilág, alacsony savtartalommal és csokoládés aromával.</p>
+                        <div class="product-price">3.700 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Brazília Santos (szemes)" data-price="3700">Kosárba</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?latte" alt="Vietnam Kávé (szemes)">
+                    <div class="product-info">
+                        <h3>Vietnam Robusta (szemes)</h3>
+                        <p>Erős, intenzív ízvilág, magas koffeintartalommal, tökéletes eszpresszónak.</p>
+                        <div class="product-price">3.100 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Vietnam Robusta (szemes)" data-price="3100">Kosárba</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?latte" alt="Etióp Kávé (őrölt)">
+                    <div class="product-info">
+                        <h3>Etióp Yirgacheffe (őrölt)</h3>
+                        <p>Élénk citrusos jegyekkel és virágos aromával. Közepesen pörkölt és őrölt.</p>
+                        <div class="product-price">5.200 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Etióp Yirgacheffe (őrölt)" data-price="5200">Kosárba</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?latte" alt="Kolumbiai Kávé (őrölt)">
+                    <div class="product-info">
+                        <h3>Kolumbia Supremo (őrölt)</h3>
+                        <p>Közepes testű, enyhén édes íz, karamellás és diós jegyekkel. Őrölve.</p>
+                        <div class="product-price">4.900 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Kolumbia Supremo (őrölt)" data-price="4900">Kosárba</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?latte" alt="Brazil Kávé (őrölt)">
+                    <div class="product-info">
+                        <h3>Brazília Santos (orölt)</h3>
+                        <p>Gazdag, testes ízvilág, alacsony savtartalommal és csokoládés aromával. Őrölve.</p>
+                        <div class="product-price">4.700 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Brazília Santos (orölt)" data-price="4700">Kosárba</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x300/?latte" alt="Vietnam Kávé (őrölt)">
+                    <div class="product-info">
+                        <h3>Vietnam Robusta (őrölt)</h3>
+                        <p>Erős, intenzív ízvilág, magas koffeintartalommal, tökéletes eszpresszónak. Csak őrőlve.</p>
+                        <div class="product-price">4.100 Ft</div>
+                        <button class="add-to-cart-btn" data-name="Vietnam Robusta (őrölt)" data-price="4100">Kosárba</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="cart">
+                <h3>Kosár</h3>
+                <ul id="cart-items">
+                    </ul>
+                <div class="cart-total">
+                    Összesen: <span id="total-price">0</span> Ft
+                </div>
+            </div>
+
+            <div class="chatbot-widget">
+                <h3>Kávé Bot Segít <span style="font-size: 0.8em; float: right;">☕</span></h3>
+                <div id="chat-messages">
+                    <div class="chat-message bot">Szia! Üdvözöllek a Kávé Világban! Miben segíthetek? Kérdezz a szállításról, akciókról, vagy a kávéinkról!</div>
+                </div>
+                <div id="chat-input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Írj ide..." onkeypress="handleChatKeyPress(event)">
+                    <button id="chat-send-btn" onclick="sendMessage()">Küldés</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
